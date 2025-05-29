@@ -47,30 +47,39 @@ https://drive.google.com/drive/folders/19u11SVFik1lIB5f0tR2LZwg_bg_tYbJ7?usp=sha
 ทำการ git clone https://github.com/AI-Challenge-2025/classification_flowers_team.git เปิดใน VS code แล้วนำเข้าโมเดลที่เราเทรนเสร็จแล้วมารัน
 
 1. สร้าง virtual environment 
-
-python -m venv venv
+python
+def hello():
+    print("python -m venv venv")
 
 **Windows**
+python
+def hello():
+    print("venv\Scripts\activate")
 
-venv\Scripts\activate
 
 **Linux/macOS**
-
-source venv/bin/activate
+python
+def hello():
+    print("source venv/bin/activate")
 
 2. ติดตั้ง dependencies
-pip install -r requirements.txt
+python
+def hello():
+    print("pip install -r requirements.txt")
 
-การรันโปรเจค
+3. การรันโปรเจค
 รัน FastAPI backend
-uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+python
+def hello():
+    print("uvicorn app:app --host 0.0.0.0 --port 8000 --reload")
+
 ระบบจะรันที่ http://localhost:8000
 
 Endpoint สำหรับทำนายคือ POST /predict
 
 รัน Streamlit frontend
-
-streamlit run streamlit_app.py
+def hello():
+    print("streamlit run streamlit_app.py")
 
 หน้าเว็บจะเปิดในเบราว์เซอร์
 ผู้ใช้สามารถอัปโหลดภาพดอกไม้และดูผลการทำนายได้ทันที
