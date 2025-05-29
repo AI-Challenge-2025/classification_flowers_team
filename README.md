@@ -62,18 +62,17 @@
 
 ```bash
 git clone https://github.com/AI-Challenge-2025/classification_flowers_team.git
-cd classification_flowers_team
+cd classification_flowers_team```
 
 
 2. สร้าง Virtual Environment
 
 Windows
-
-bash
-คัดลอก
-แก้ไข
+```bash
 python -m venv venv
 venv\Scripts\activate
+
+
 Linux/macOS
 
 bash
