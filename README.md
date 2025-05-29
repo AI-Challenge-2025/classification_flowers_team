@@ -65,35 +65,33 @@ git clone https://github.com/AI-Challenge-2025/classification_flowers_team.git
 cd classification_flowers_team
 
 
-2. สร้าง Virtual Environment
+2. **สร้าง Virtual Environment**
 
-Windows
-bash
+**Windows**
+
 python -m venv venv
 venv\Scripts\activate
 
 
-Linux/macOS
-bash
+**Linux/macOS**
+
 python -m venv venv
 source venv/bin/activate
 
-ติดตั้ง dependencies
 
-3.ติดตั้ง dependencies
-bash
+3.**ติดตั้ง dependencies**
+
 pip install -r requirements.txt
 
-4. รัน FastAPI backend
-bash
+4. รัน **FastAPI backend**
+
 uvicorn app:app --host 0.0.0.0 --port 8000 --reload
 
 ระบบจะรันที่ http://localhost:8000
 Endpoint สำหรับทำนายคือ POST /predict
 
-5. รัน Streamlit frontend
+5. **รัน Streamlit frontend**
 
-bash
 streamlit run streamlit_app.py
 
 ระบบจะเปิดหน้าเว็บในเบราว์เซอร์ ให้ผู้ใช้สามารถอัปโหลดภาพดอกไม้และดูผลการทำนายได้ทันที
